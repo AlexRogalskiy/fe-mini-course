@@ -1,11 +1,11 @@
 ---
 layout: HomeLayout
 home: true
-heroImage: https://s1.ax1x.com/2020/10/10/06VvOx.png
+heroImage: https://s1.ax1x.com/2020/10/11/0cxYJP.png
 heroText: 《前端小课》
-tagline: 《前端小课》是通过图片、文字、代码、视频等多种方式写成的一本多媒体电子书。全书分为不同的小书，每本小书旨在讲透一个知识点。比如 CSS布局、JavaScript基础、动画。以最基础的编程知识为起点，即使不懂编程的小白也能够通过本书学会编程，顺利进入互联网行业。本书最大的特色是通过公众号+图书+网站形成一个闭环。读者可通过公众号实时获得最新的前端知识，并与作者实时互动；通过图书可以系统地学习前端知识，对前端知识形成一个整体的认识；通过网站可看到代码的实现运行效果。
+tagline: 
 actionText: 开始阅读
-actionLink: /html/
+actionLink: /html-book/
 features:
 - title: 开发前准备
   details: 万事开头难，贵在坚持

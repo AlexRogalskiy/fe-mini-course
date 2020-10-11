@@ -1,7 +1,7 @@
 {
-  "name": "fe-mini-course",
+  "name": "前端小课，帮助 10W 人入门并进阶前端",
   "version": "0.0.1",
-  "description": "learn fe 100 days",
+  "description": "学习前端从0到1",
   "main": "index.js",
   "authors": {
     "name": "suyan wang",

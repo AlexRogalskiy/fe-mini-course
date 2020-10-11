@@ -93,7 +93,6 @@ export default {
   .desk-title
     color: #fff;
     font-size: 30px;
-    padding: 30px 30px 0;
     font-family: PingFangSC-Medium;
   .features
     border-top 1px solid $borderColor
@@ -107,7 +106,6 @@ export default {
     overflow scroll hidden
   .feature
     flex-grow 1
-    flex-basis 20%
     flex-shrink 0
     width 170px
     height 260px
@@ -129,9 +127,7 @@ export default {
       padding-bottom 0
       color lighten(#17181a, 10%)
       font-family PingFangSC-Medium
-      max-height 20px
       padding 0 8px
-      overflow: hidden;
     p
       color #333
       max-height 60px
@@ -143,14 +139,6 @@ export default {
     border-top 1px solid $borderColor
     text-align center
     color lighten($textColor, 25%)
-
-@media (max-width: $MQMobile)
-  .home
-    .features
-      flex-direction column
-    .feature
-      max-width 100%
-      padding 0 2.5rem
 
 @media (max-width: $MQMobileNarrow)
   .home

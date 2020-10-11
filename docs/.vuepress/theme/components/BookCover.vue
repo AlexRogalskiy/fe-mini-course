@@ -12,7 +12,7 @@
             <div class="bottom content">到目前为止已发 200 篇原创文章，到年底估计能写 300 篇。</div>
         </div>
         <div class="book-des-wrap">
-            <p class="title">{{ book.name }}</p>
+            <p class="book-title">{{ book.name }}</p>
             <p class="des">{{ book.des }}</p>
             <p class="des">{{ book.des2 }}</p>
             <p class="action">
@@ -53,7 +53,7 @@ export default {
     computed: {
         actionLink () {
             return {
-                link: '/html/',
+                link: '/ready-book/',
                 text: '立即阅读'
             }
         }
@@ -72,9 +72,6 @@ export default {
     display: flex;
     justify-self: center;
     align-items: center;
-    width: 62.5rem;
-    height: 37.5rem;
-    margin: 0.625rem auto;
     .cover-wrap {
         position: relative;
         margin-left: 1.875rem;
@@ -86,8 +83,8 @@ export default {
             left: -0.375rem;
             bottom: 0;
             width: 0.625rem;
-            height: 28rem;
-            z-index: 10;
+            height: 27.375rem;
+            z-index: 6;
             background-color: #ccc;
             border-radius: 0.3125rem;
         }
@@ -100,11 +97,11 @@ export default {
             position: absolute;
             bottom: 0.75rem;
             left: -0.375rem;
-            width: 21.25rem;
-            height: 27.5rem;
+            width: 20rem;
+            height: 26.875rem;
             background-color: #eee;
             padding: 0.625rem 0;
-            z-index: 5;
+            z-index: 3;
             transform: skewY(-2deg);
             border-left: 0.25rem solid #eee;
             border-top-right-radius: 0.3125rem;
@@ -116,8 +113,8 @@ export default {
             position: absolute;
             bottom: 1.375rem;
             left: 0;
-            width: 20rem;
-            height: 27.5rem;
+            width: 19.375rem;
+            height: 26.875rem;
             background-color: #ddd;
             border-top-right-radius: 0.3125rem;
             border-bottom-right-radius: 0.3125rem;
@@ -129,12 +126,12 @@ export default {
             position: absolute;
             bottom: -0.5rem;
             left: 0;
-            width: 18.75rem;
-            height: 27.5rem;
+            width: 18.125rem;
+            height: 26.875rem;
             background-color: #fff;
             border-top-right-radius: 0.3125rem;
             border-bottom-right-radius: 0.3125rem;
-            z-index: 10;
+            z-index: 5;
             transform: skewY(4deg);
             padding: 0.125rem 0;
             font-family: PingFangSC-Medium;
@@ -167,12 +164,13 @@ export default {
         }
     }
     .book-des-wrap {
-        margin: 0 1.875rem;
+        margin-left: 3rem;
         text-align: left;
-        .title {
+        .book-title {
             font-size: 2.5rem;
             font-family: PingFangSC-Medium;
             color: #fff;
+            margin: 5rem 0 0 0;
         }
         .des {
             font-size: 1.25rem;
@@ -182,4 +180,15 @@ export default {
         }
     }
 }
+@media (max-width: $MQMobile)
+  .book-info
+    flex-direction column
+    justify-content center
+    align-items center
+    .book-des-wrap
+      margin 0
+      .book-title
+        font-size 1.875rem
+      .des
+        font-size 1rem
 </style>

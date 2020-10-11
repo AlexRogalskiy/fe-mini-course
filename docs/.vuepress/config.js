@@ -21,7 +21,9 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
-
+  markdown: {
+    lineNumbers: true
+  },
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -53,15 +55,39 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/html/': [
+      '/ready-book/': [
         {
-          title: 'HTML 入门',
+          title: '第 1 阶段《开发前准备》',
           collapsable: false,
           children: [
-            ''
+            '',
+            '1-VSCode',
+            '2-broswer',
+            '3-broswer-debug',
+            '4-GitHub',
+            '5-git',
+            '6-webServer'
           ]
         }
       ],
+      '/html-book/': [
+        {
+          title: '第 2 阶段《HTML踏入前端大门》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/css-book/': [
+        {
+          title: '第 3 阶段《CSS网页的化妆品》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ]
     }
   },
 

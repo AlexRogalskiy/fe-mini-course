@@ -3,8 +3,8 @@
         <div class="content">
             <div class="qrcode"></div>
             <div class="des-box">
-                <div class="title">Hi，我是素燕，帮助 10W 人入门并进阶前端</div>
-                <div class="title">这是我的公众号，微信扫码关注我，和我一起成长</div>
+                <div class="title">帮助 10W 人入门并进阶前端</div>
+                <div class="title">微信扫码关注我，和我一起成长</div>
                 <div class="copyright">Copyright © 2020 素燕</div>
             </div>
         </div>
@@ -25,18 +25,17 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
     width: 100%;
     margin: 0 auto;
     background-color: #1f2022;
     .content {
         display: flex;
-        height: 120px;
-        margin: 0 auto;
+        margin: 1.875rem auto;
         .qrcode {
             display: inline-block;
-            width: 120px;
-            height: 120px;
+            flex-shrink: 0;
+            width: 7.5rem;
+            height: 7.5rem;
             background-image: url(//s1.ax1x.com/2020/10/10/06VvOx.png);
             background-repeat: no-repeat;
             background-size: cover;
@@ -45,18 +44,27 @@ export default {
         .des-box {
             display: inline-block;
             height: 100%;
-            margin-left: 20px;
+            margin: 0 1.25rem 0;
             .title {
                 color: #aaa;
-                font-size: 18px;
-                padding: 8px 0;
+                font-size: 1.125rem;
+                padding: 0.5rem 0;
             }
             .copyright {
                 color: #aaa;
-                font-size: 14px;
-                padding-top: 8px;
+                font-size: 0.875rem;
+                padding-top: 0.5rem;
             }
         }
     }
 }
+@media (max-width: $MQMobile)
+  .footer-wrap
+    .content
+      flex-direction column
+      justify-content center
+      align-items center
+      .des-box
+        text-align center
+
 </style>
