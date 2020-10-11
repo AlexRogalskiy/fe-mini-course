@@ -1,0 +1,27 @@
+{
+  "name": "fe-mini-course",
+  "version": "1.0.0",
+  "description": "learn fe 100 days",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lefex/fe-mini-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lefex/fe-mini-course/issues"
+  },
+  "homepage": "https://github.com/lefex/fe-mini-course#readme"
+}

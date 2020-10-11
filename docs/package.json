@@ -1,0 +1,16 @@
+{
+  "name": "fe-mini-course",
+  "version": "0.0.1",
+  "description": "learn fe 100 days",
+  "main": "index.js",
+  "authors": {
+    "name": "suyan wang",
+    "email": "wsyxyxs@126.com"
+  },
+  "repository": "https://github.com/lefex/fe-mini-course/fe-mini-course",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT"
+}
