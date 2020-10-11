@@ -17,7 +17,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3e77e9' }],
+    ['meta', { name: 'theme-color', content: '#1f2022' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
@@ -35,23 +35,29 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: '给读者一封信',
+        link: '/letter/',
+      },
+      {
+        text: '前端学习路线',
+        link: '/lerarnRouter/',
+      },
+      {
+        text: '免费订阅',
+        link: '/subcribe/',
       },
       {
         text: 'GitHub',
-        link: 'https://github.com/lefex/fe-mini-course'
+        link: 'https://github.com/lefex/FE'
       }
     ],
     sidebar: {
-      '/guide/': [
+      '/html/': [
         {
-          title: 'Guide',
+          title: 'HTML 入门',
           collapsable: false,
           children: [
-            '',
-            'using-fe',
-            'using-iOS'
+            ''
           ]
         }
       ],
