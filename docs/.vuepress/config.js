@@ -33,6 +33,7 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
+    search: false,
     nav: [
       {
         text: '给读者一封信',
