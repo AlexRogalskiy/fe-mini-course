@@ -87,6 +87,114 @@ module.exports = {
             '/'
           ]
         }
+      ],
+      '/javaScript-book/': [
+        {
+          title: '第 4 阶段《JavaScript编程启蒙》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/dom-book/': [
+        {
+          title: '第 5 阶段《DOM》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/broswer-env-book/': [
+        {
+          title: '第 6 阶段《浏览器环境》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/broswer-work-book/': [
+        {
+          title: '第 7 阶段《浏览器工作原理》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/network-book/': [
+        {
+          title: '第 8 阶段《网络编程》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/vue-book/': [
+        {
+          title: '第 9 阶段《前端框架Vue》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/package-book/': [
+        {
+          title: '第 10 阶段《前端构建》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/nodejs-book/': [
+        {
+          title: '第 11 阶段《Node.js》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/compiler-book/': [
+        {
+          title: '第 12 阶段《编译原理》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/dsa-book/': [
+        {
+          title: '第 13 阶段《数据结构与算法》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/framework-book/': [
+        {
+          title: '第 14 阶段《开源库》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/interview-book/': [
+        {
+          title: '第 15 阶段《面试指南》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
       ]
     }
   },

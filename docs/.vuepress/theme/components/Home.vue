@@ -18,9 +18,11 @@
         :key="index"
         class="feature"
       >
-        <div :style="{backgroundImage: 'url(' + feature.cover + ')'}""></div>
-        <h2>{{ feature.title }}</h2>
-        <p>{{ feature.details }}</p>
+        <a :href="feature | actionLink">
+          <div :style="{backgroundImage: 'url(' + feature.cover + ')'}""></div>
+          <h2>{{ feature.title }}</h2>
+          <p>{{ feature.details }}</p>
+        </a>
       </div>
     </div>
 
@@ -49,6 +51,12 @@ export default {
         link: this.data.actionLink,
         text: this.data.actionText
       }
+    }
+  },
+
+  filters: {
+    actionLink(info) {
+      return '/fe-mini-course' + info.href 
     }
   }
 }
