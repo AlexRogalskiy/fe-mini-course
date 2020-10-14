@@ -19,7 +19,15 @@ module.exports = {
   head: [
     ['meta', { name: 'theme-color', content: '#1f2022' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'icon', href: 'https://s1.ax1x.com/2020/10/12/0WW0mV.png' }],
+    ['script', {}, `var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f01690767851d657d101174b47fb22f6";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();`]
   ],
   markdown: {
     lineNumbers: true
@@ -40,6 +48,10 @@ module.exports = {
       {
         text: '给读者一封信',
         link: '/letter/',
+      },
+      {
+        text: '学习资源',
+        link: '/resource-book/',
       },
       {
         text: '前端学习路线',
@@ -190,6 +202,15 @@ module.exports = {
       '/interview-book/': [
         {
           title: '第 15 阶段《面试指南》',
+          collapsable: false,
+          children: [
+            '/'
+          ]
+        }
+      ],
+      '/resource-book/': [
+        {
+          title: '《前端学习资源汇总》',
           collapsable: false,
           children: [
             '/'
