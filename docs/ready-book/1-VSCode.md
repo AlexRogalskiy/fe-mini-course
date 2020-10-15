@@ -60,10 +60,4 @@ mkdir 1-1-first-html
 学完本节内容能够创建一个 HTML 文件，并在浏览器中预览即可。更多内容可查看 [第1天：开篇词，开发环境准备](https://mp.weixin.qq.com/s/66oU0fY502OYK9WpxiaCtA)
 
 
-
-::: danger
-
-本节完！如果你对本节内容有不明白的地方，可加入读者群交流（微信 wsy9871），或关注公众号「素燕」。下节课见。
-
-:::
 <GongZhongHao></GongZhongHao>
