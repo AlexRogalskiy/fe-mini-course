@@ -96,7 +96,11 @@ module.exports = {
           title: '第 3 阶段《CSS网页的化妆品》',
           collapsable: false,
           children: [
-            '/'
+            '/',
+            'flow',
+            'position',
+            'flexbox',
+            'layout'
           ]
         }
       ],
