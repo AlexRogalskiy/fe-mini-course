@@ -70,7 +70,7 @@
 
 ### 方式一、流式布局中，宽高固定
 
-```css{4}
+```css
 .logo {
     width: 160px;
     height: 100px;
@@ -81,7 +81,7 @@
 
 ### 方式二、flexbox 布局，设置容器属性就行（注意IE浏览器）
 
-```css{3}
+```css
 .center-wrap {
     display: flex;
     justify-content: center;
@@ -94,7 +94,7 @@
 
 ### 方式三、使用 transform，对宽高无要求
 
-```css{5}
+```css
 .logo {
     position: absolute;
     padding: 10px;
@@ -106,7 +106,7 @@
 
 ### 方式四、inline-block
 
-```css{5,8}
+```css
 .content-inline-wrap {
     position: relative;
     background-color: #282c34;

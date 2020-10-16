@@ -9,7 +9,8 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
   description: description,
-  base: '/fe-mini-course/',
+  base: '/',
+  // base: '/fe-mini-course/',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`

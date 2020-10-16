@@ -20,6 +20,9 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:lefex/fe-mini-course.git master:gh-pages
+# 发布到 lefex.github.io/fe-mini-course 下
+# git push -f git@github.com:lefex/fe-mini-course.git master:gh-pages
+# 发布到 lefex.github.io 下
+git push -f git@github.com:lefex/lefex.github.io.git master:gh-pages
 
 cd -

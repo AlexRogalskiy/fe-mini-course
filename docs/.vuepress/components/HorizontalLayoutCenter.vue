@@ -108,11 +108,11 @@
     .action-item {
         background-color: #333;
         display: inline-block;
-        padding: 10px 20px;
+        padding: 8px 4px;
         flex: 1;
         text-align: center;
         border-radius: 5px;
-        margin: 8px;
+        margin: 4px;
         cursor: pointer;
     }
 </style>
