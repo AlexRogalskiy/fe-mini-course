@@ -237,9 +237,9 @@ display 需要设置为 inline-block，在父元素中设置 text-algin 让子�
 
 这种可以借助于两列布局的思想，使用 float、overflow 和 flexbox 的方式均可实现。
 
-- float
+- overflow
 
-```css
+```css{12}
 .left {
     float: left;
     width: 140px;
@@ -256,7 +256,7 @@ display 需要设置为 inline-block，在父元素中设置 text-algin 让子�
 }
 ```
 
-- overflow
+- float
 
 ```css
 .left {
