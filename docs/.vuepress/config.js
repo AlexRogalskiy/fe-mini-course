@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: '前端小课',
+  title: '首页',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -68,118 +68,104 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/ready-book/': [
+      '/books/': [
         {
-          title: '第 1 阶段《开发前准备》',
-          collapsable: false,
+          title: '第 1 章 开发前准备',
+          collapsable: true,
           children: [
             '',
-            '1-VSCode',
-            '2-broswer',
-            '3-broswer-debug',
-            '4-GitHub',
-            '5-git',
-            '6-webServer'
+            'ready-book/1-VSCode',
+            'ready-book/2-broswer',
+            'ready-book/3-broswer-debug',
+            'ready-book/4-GitHub',
+            'ready-book/5-git',
+            'ready-book/6-webServer'
           ]
-        }
-      ],
-      '/html-book/': [
+        },
         {
-          title: '第 2 阶段《HTML踏入前端大门》',
-          collapsable: false,
+          title: '第 2 章 死磕 CSS 布局',
+          collapsable: true,
+          children: [
+            'css-book/flow',
+            'css-book/position',
+            'css-book/flexbox',
+            'css-book/layout'
+          ]
+        },
+        {
+          title: '第 3 章 用好 HTML',
+          collapsable: true,
           children: [
             '/'
           ]
-        }
-      ],
-      '/css-book/': [
+        },
         {
-          title: '第 3 阶段《CSS网页的化妆品》',
-          collapsable: false,
-          children: [
-            '/',
-            'flow',
-            'position',
-            'flexbox',
-            'layout'
-          ]
-        }
-      ],
-      '/javaScript-book/': [
-        {
-          title: '第 4 阶段《JavaScript编程启蒙》',
-          collapsable: false,
+          title: '第 4 章 JavaScript编程',
+          collapsable: true,
           children: [
             '/'
           ]
-        }
-      ],
-      '/dom-book/': [
+        },
         {
-          title: '第 5 阶段《DOM》',
-          collapsable: false,
+          title: '第 5 章 DOM 艺术',
+          collapsable: true,
           children: [
             '/'
           ]
-        }
-      ],
-      '/broswer-env-book/': [
+        },
         {
-          title: '第 6 阶段《浏览器环境》',
-          collapsable: false,
+          title: '第 6 章 浏览器环境',
+          collapsable: true,
           children: [
             '/'
           ]
-        }
-      ],
-      '/broswer-work-book/': [
+        },
         {
-          title: '第 7 阶段《浏览器工作原理》',
-          collapsable: false,
+          title: '第 7 章 浏览器工作原理',
+          collapsable: true,
           children: [
             '/'
           ]
-        }
-      ],
-      '/network-book/': [
+        },
         {
-          title: '第 8 阶段《网络编程》',
-          collapsable: false,
+          title: '第 8 章 网络编程',
+          collapsable: true,
           children: [
             '/'
           ]
-        }
-      ],
-      '/vue-book/': [
+        },
         {
-          title: '第 9 阶段《前端框架Vue》',
-          collapsable: false,
+          title: '第 9 章 前端框架Vue',
+          collapsable: true,
           children: [
             '/'
           ]
-        }
-      ],
-      '/package-book/': [
+        },
         {
-          title: '第 10 阶段《前端构建》',
-          collapsable: false,
+          title: '第 10 章 前端构建',
+          collapsable: true,
           children: [
             '/'
           ]
-        }
-      ],
-      '/nodejs-book/': [
+        },
         {
-          title: '第 11 阶段《Node.js》',
-          collapsable: false,
+          title: '第 11 章 Node.js',
+          collapsable: true,
           children: [
             '/'
           ]
-        }
-      ],
-      '/compiler-book/': [
+        },
         {
-          title: '第 12 阶段《编译原理》',
+          title: '第 12 章 编译原理',
+          collapsable: true,
+          children: [
+            '/'
+          ]
+        },
+      ],
+      '/resource-book/': [
+        {
+          title: '《前端学习资源汇总》',
           collapsable: false,
           children: [
             '/'
@@ -188,7 +174,7 @@ module.exports = {
       ],
       '/dsa-book/': [
         {
-          title: '第 13 阶段《数据结构与算法》',
+          title: '《前端项目实战》',
           collapsable: false,
           children: [
             '/'
@@ -197,7 +183,7 @@ module.exports = {
       ],
       '/framework-book/': [
         {
-          title: '第 14 阶段《开源库》',
+          title: '《前端开源库》',
           collapsable: false,
           children: [
             '/'
@@ -206,16 +192,16 @@ module.exports = {
       ],
       '/interview-book/': [
         {
-          title: '第 15 阶段《面试指南》',
+          title: '《前端面试指南》',
           collapsable: false,
           children: [
             '/'
           ]
         }
       ],
-      '/resource-book/': [
+      '/project-book/': [
         {
-          title: '《前端学习资源汇总》',
+          title: '《前端项目实战》',
           collapsable: false,
           children: [
             '/'

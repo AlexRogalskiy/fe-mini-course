@@ -109,18 +109,35 @@ export default {
     display flex
     flex-wrap no-wrap
     align-items flex-start
-    align-content stretch
     justify-content space-between
-    overflow scroll hidden
+    overflow hidden
   .feature
-    flex-grow 1
+    flex-grow 0
     flex-shrink 0
-    width 170px
+    width 190px
     height 260px
     background-color #fff
-    border-radius 5px
+    border-top-right-radius 4px
+    border-bottom-right-radius 4px
     text-align center
     margin-right 20px
+    border-radius 5px 8px 8px 5px
+    transition .5s linear
+    transform-style preserve-3d
+    transform-origin left center 0px
+    &::before
+      content ""
+      position absolute
+      width 10px
+      height calc(100% + 2px)
+      top -1px
+      z-index 100
+      border-radius 2px
+      left 0
+      transition 2s ease
+      background linear-gradient(to right, #9c2e2b 0%, #cc4b48 12%, #9c2e2b 25%, #cc4b48 37%, #9c2e2b 50%, #cc4b48 62%, #9c2e2b 75%, #cc4b48 87%, #9c2e2b 100%)
+    &:last-child
+      margin-right 0
     div
       width 100%
       height 140px
