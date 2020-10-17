@@ -56,7 +56,7 @@ export default {
 
   filters: {
     actionLink(info) {
-      return '/fe-mini-course' + info.href 
+      return info.href 
     }
   }
 }
