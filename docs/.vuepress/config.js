@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: '首页',
+  title: '前端小课',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -83,7 +83,7 @@ module.exports = {
           ]
         },
         {
-          title: '第 2 章 死磕 CSS 布局',
+          title: '第 2 章 CSS 样式与布局',
           collapsable: true,
           children: [
             'css-book/flow',
@@ -96,79 +96,94 @@ module.exports = {
           title: '第 3 章 用好 HTML',
           collapsable: true,
           children: [
-            '/'
+            'html-book/introduction'
           ]
         },
         {
           title: '第 4 章 JavaScript编程',
           collapsable: true,
           children: [
-            '/'
+            'javaScript-book/introduction'
           ]
         },
         {
           title: '第 5 章 DOM 艺术',
           collapsable: true,
           children: [
-            '/'
+            'dom-book/introduction'
           ]
         },
         {
           title: '第 6 章 浏览器环境',
           collapsable: true,
           children: [
-            '/'
+            'broswer-env-book/introduction'
           ]
         },
         {
           title: '第 7 章 浏览器工作原理',
           collapsable: true,
           children: [
-            '/'
+            'broswer-work-book/introduction'
           ]
         },
         {
           title: '第 8 章 网络编程',
           collapsable: true,
           children: [
-            '/'
+            'network-book/introduction'
           ]
         },
         {
           title: '第 9 章 前端框架Vue',
           collapsable: true,
           children: [
-            '/'
+            'vue-book/introduction'
           ]
         },
         {
           title: '第 10 章 前端构建',
           collapsable: true,
           children: [
-            '/'
+            'package-book/introduction'
           ]
         },
         {
           title: '第 11 章 Node.js',
           collapsable: true,
           children: [
-            '/'
+            'nodejs-book/introduction'
           ]
         },
         {
           title: '第 12 章 编译原理',
           collapsable: true,
           children: [
-            '/'
+            'compiler-book/introduction'
+          ]
+        },
+        {
+          title: '第 13 章 前端动画',
+          collapsable: true,
+          children: [
+            'animation-book/introduction'
+          ]
+        },
+        {
+          title: '第 14 章 上线相关',
+          collapsable: true,
+          children: [
+            'online-book/introduction'
           ]
         },
       ],
       '/resource-book/': [
         {
-          title: '《前端学习资源汇总》',
+          title: '前端学习资源汇总',
           collapsable: false,
           children: [
-            '/'
+            'tools',
+            'learn'
           ]
         }
       ],

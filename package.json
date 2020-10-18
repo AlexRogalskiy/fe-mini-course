@@ -23,5 +23,7 @@
   "bugs": {
     "url": "https://github.com/lefex/fe-mini-course/issues"
   },
-  "homepage": "https://github.com/lefex/fe-mini-course#readme"
+  "homepage": "https://github.com/lefex/fe-mini-course#readme",
+  "dependencies": {
+  }
 }
