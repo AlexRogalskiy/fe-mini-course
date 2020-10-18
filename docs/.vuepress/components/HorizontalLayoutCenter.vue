@@ -103,16 +103,17 @@
     .action-wrap {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .action-item {
         background-color: #333;
         display: inline-block;
-        padding: 8px 4px;
+        padding: 6px 2px;
         flex: 1;
         text-align: center;
         border-radius: 5px;
-        margin: 4px;
+        margin: 2px;
         cursor: pointer;
     }
 </style>

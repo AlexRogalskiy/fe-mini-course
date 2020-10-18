@@ -78,9 +78,6 @@ export default {
         width: 21rem;
         height: 500px;
         flex-shrink: 0;
-        transition: .5s linear;
-        transform-style: preserve-3d;
-        transform-origin: left center 0px;
         cursor: pointer;
         &::before {
             content ""
@@ -93,10 +90,6 @@ export default {
             left -6px
             transition 2s ease
             background linear-gradient(to right, #9c2e2b 0%, #cc4b48 12%, #9c2e2b 25%, #cc4b48 37%, #9c2e2b 50%, #cc4b48 62%, #9c2e2b 75%, #cc4b48 87%, #9c2e2b 100%)
-        }
-        &:hover {
-            /* transform: rotateY(4deg); */
-            transform: rotateZ(-2deg);
         }
         .ji-line {
             position: absolute;

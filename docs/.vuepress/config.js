@@ -86,8 +86,6 @@ module.exports = {
           title: '第 2 章 CSS 样式与布局',
           collapsable: true,
           children: [
-            'css-book/flow',
-            'css-book/position',
             'css-book/flexbox',
             'css-book/layout'
           ]

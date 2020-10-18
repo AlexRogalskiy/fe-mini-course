@@ -88,15 +88,16 @@ export default {
 .action-wrap {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .action-item {
     background-color: #333;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 6px 2px;
     flex: 1;
     text-align: center;
     border-radius: 5px;
-    margin: 8px;
+    margin: 2px;
     cursor: pointer;
 }
 </style>

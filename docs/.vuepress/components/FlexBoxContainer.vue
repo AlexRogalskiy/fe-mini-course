@@ -152,6 +152,7 @@
     .action-wrap {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .action-name {
@@ -163,12 +164,12 @@
     .action-item {
         background-color: #333;
         display: inline-block;
-        padding: 5px 10px;
+        padding: 6px 2px;
         flex: 1;
         text-align: center;
         font-size: 15px;
         border-radius: 5px;
-        margin: 4px;
+        margin: 2px;
         cursor: pointer;
     }
 

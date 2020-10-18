@@ -182,7 +182,9 @@ export default {
       .action-button
         font-size 1rem
         padding 0.6rem 1.2rem
-    .feature
-      h2
-        font-size 1.25rem
+    .features
+      overflow scroll
+      .feature
+        h2
+          font-size 1.25rem
 </style>

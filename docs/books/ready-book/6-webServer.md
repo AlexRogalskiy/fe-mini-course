@@ -1,4 +1,4 @@
-# 第6课 · 搞一个万能的 webServer
+# 第6课 · 用 webServer 预览网页
 
 在前端开发当中，接触的 webServer 比较多。这节内容也是为了给后续内容奠定一个基础。如果暂时看不懂，可以先跟着这个教程做一遍。
 
@@ -19,7 +19,7 @@ v12.13.0
 
 如果能正常输出 node 的版本号，说明 node 安装成功了。说起 node，不得不提 npm（node package manager），它是用来管理第三方 JavaScript 代码的，可以把它看做是一个第三方 JavaScript 资源库，如果你需要这些资源的时候直接下载即可。还不懂，可以把它看做是一个百度网盘，用来存放各种资源，当别人需要资源的时候直接下载即可。
 
-搭建 webserver 就依赖于 npm 提供的第三方库 webpack。我在[前端下课 GitHub](https://github.com/lefex/FE/tree/master/webserver) 上提供了一个 webserver，你可以直接下载。
+搭建 webserver 就依赖于 npm 提供的第三方库 webpack。我在[前端小课 GitHub](https://github.com/lefex/FE/tree/master/webserver) 上提供了一个 webserver，你可以直接下载。
 
 下载完后，目录类似这样：
 

@@ -176,11 +176,11 @@ flex-item 的初始值。
 
 ::: tip algin-self
 
-可修改单个 flex-item 在纵轴上的对齐方式。
+stretch | flex-start | flex-end | center | baseline
 
 :::
 
-
+这个和 align-items 的功能基本一样，不同的是可修改单个 flex-item 在纵轴上的对齐方式。
 
 ::: tip order
 
