@@ -74,12 +74,11 @@ module.exports = {
           collapsable: true,
           children: [
             '',
-            'ready-book/1-VSCode',
-            'ready-book/2-broswer',
-            'ready-book/3-broswer-debug',
-            'ready-book/4-GitHub',
-            'ready-book/5-git',
-            'ready-book/6-webServer'
+            'ready-book/VSCode',
+            'ready-book/broswer',
+            'ready-book/GitHub',
+            'ready-book/git',
+            'ready-book/webServer'
           ]
         },
         {

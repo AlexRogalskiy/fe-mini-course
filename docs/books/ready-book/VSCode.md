@@ -1,4 +1,4 @@
-# 第1课 · 找对开发利器 VSCode
+# 1.1 开发利器 VSCode
 
 开始编程之前需要找到一个写代码的编辑器，前端开发有非常多的编辑器，比如 [Sublime Text](http://www.sublimetext.com/)、[WebStorm](https://www.jetbrains.com/webstorm/)，但是我劝你还是使用 [VSCode](https://code.visualstudio.com/)，它由微软开发，具有强大的插件系统，前端人都在用的编辑器，总之非常好用。
 

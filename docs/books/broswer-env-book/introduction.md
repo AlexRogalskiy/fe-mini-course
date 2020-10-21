@@ -1,10 +1,15 @@
 # 前言
 
-::: danger
+本章内容主要学习浏览器环境相关的知识，这部分知识属于浏览器独有特性，由于浏览器的不同，某些特性可能表现的并不一致。我们主要学习下面的知识：
 
-非常抱歉，本节内容正在撰写中，请先关注公众号「素燕」，内容更新及时通知你：
-
-:::
-
+- window
+- document
+- location
+- cookie
+- localStorage
+- sessionStorage
+- navigator
+- history
+- screen
 
 <GongZhongHao></GongZhongHao>
