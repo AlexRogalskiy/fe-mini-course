@@ -114,7 +114,10 @@ module.exports = {
           title: '第 6 章 浏览器环境',
           collapsable: true,
           children: [
-            'broswer-env-book/introduction'
+            'broswer-env-book/introduction',
+            'broswer-env-book/cookie',
+            'broswer-env-book/session_storage',
+            'broswer-env-book/local_storage'
           ]
         },
         {

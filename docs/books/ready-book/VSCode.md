@@ -55,6 +55,13 @@ mkdir 1-1-first-html
 
 ![](https://s1.ax1x.com/2020/10/12/0W6W9I.jpg)
 
+## 常用的插件
+
+- vscode icons 给你的文件加一个漂亮的图标；
+- Git Blame 显示代码是谁写的；
+- open in browser 用浏览器打开 html
+- px to rem 把 px 转换为 rem
+
 
 
 学完本节内容能够创建一个 HTML 文件，并在浏览器中预览即可。更多内容可查看 [第1天：开篇词，开发环境准备](https://mp.weixin.qq.com/s/66oU0fY502OYK9WpxiaCtA)
