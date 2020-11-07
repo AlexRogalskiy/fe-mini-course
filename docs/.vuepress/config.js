@@ -100,7 +100,8 @@ module.exports = {
           title: '第 4 章 JavaScript编程',
           collapsable: true,
           children: [
-            'javaScript-book/introduction'
+            'javaScript-book/introduction',
+            'javaScript-book/string'
           ]
         },
         {
@@ -189,10 +190,10 @@ module.exports = {
       ],
       '/dsa-book/': [
         {
-          title: '《前端项目实战》',
+          title: '《大厂算法》',
           collapsable: false,
           children: [
-            '/'
+            'ip-address'
           ]
         }
       ],

@@ -55,6 +55,8 @@ body
   overflow-y auto
 
 {$contentClass}:not(.custom)
+  background-color #1f2022
+  margin-top 80px
   @extend $wrapper
   > *:first-child
     margin-top $navbarHeight
@@ -73,6 +75,7 @@ body
 {$contentClass}.custom
   padding 0
   margin 0
+  background-color #1f2022
 
   img
     max-width 100%
@@ -113,8 +116,7 @@ h1, h2, h3, h4, h5, h6
   line-height 1.25
 
   {$contentClass}:not(.custom) > &
-    margin-top (0.5rem - $navbarHeight)
-    padding-top ($navbarHeight + 1rem)
+    padding 26px 0 20px 0
     margin-bottom 0
 
     &:first-child

@@ -2,7 +2,7 @@
 
 在学习 cookie 之前需要明白我们为啥要用 cookie，不用 cookie 行不行？
 
-试想一下这种情形，用户登录一个购物网站进行购物时，当登录后即可获得个人的购物车信息，即使过了几天后，用户任然能够获取到购物车的信息，为啥？而且整个过程只登录一次？
+试想一下这种情形，用户登录一个购物网站进行购物时，当登录后即可获得个人的购物车信息，即使过了几天后，用户不登录仍然能够获取到购物车的信息，为啥？
 
 这背后其实用的是 Cookie 机制。
 
@@ -12,9 +12,9 @@ cookie 其实是 HTTP cookie，它是客户端缓存会话（session）的一种
 
 对于私有的数据，用户必须进行登录才能够访问，当用户输入账号和密码后，服务端验证成功后会给客户端下发一个 Token（可看做是一个临时密码），当用户想访问私有数据的时候只需要带上这个 token 就行，不需要每次都需要输入密码。
 
-那么问题来了，在请求服务端数据的时候，难道都要在参数里加一个 token 吗？如果用户关闭网页后 token 就被释放了，那如何才能够保证 token 的不丢失呢？
+那么问题来了，在请求服务端数据的时候，难道在每个请求参数里都要加一个 token 吗？如果用户关闭网页后 token 就被释放了，那如何才能够保证 token 的不丢失呢？
 
-答案是通过 cookie 机制，浏览器提供了 cookie 的缓存机制，能够持久保存一些数据，即使用户关闭浏览器，再打开浏览器时 cookie 任然保留着。
+答案是通过 cookie 机制，浏览器提供了 cookie 的缓存机制，能够持久保存一些数据，即使用户关闭浏览器，再打开浏览器时 cookie 仍然保留着。
 
 ## Cookie 究竟长什么样
 
@@ -31,7 +31,7 @@ cookie 其实是 HTTP cookie，它是客户端缓存会话（session）的一种
 - `expires`：控制 cookie 的过期时间，比如你所登录的网站过一段时间后，发现还需要你进行登录操作，这是因为 cookie 过期了；
 - `http-only`：该 cookie 不能通过脚本进行访问，比如在浏览器里通过 document.cookie 无法获取到 cookie；
 - `secure`：标记是否只有 https 的请求才能够使用 cookie；
-- `same-site`：主要用来解决 CSRF 攻击问题，防止攻击者偷走你的 cookie，可以设置下面这 Strict、Lax 和 None 这三个值；
+- `same-site`：主要用来解决 CSRF 攻击问题，防止攻击者偷走你的 cookie，可以设置 Strict、Lax 和 None 这三个值；
 
 ## 通过 JavaScript 操作 Cookie
 
@@ -63,13 +63,21 @@ cookieText += cookie1;
 document.cookie = cookieText;
 ```
 
+在实际项目中，我们一般直接使用第三方库来操作 cookie，基本原理非常简单，就是对 cookie 字符串进行操作。
 
+## 限制
+
+需要注意一点，不是说一个域名下想保存多少 cookie 就保存多少，而且 cookie 的大小也有限制。不同浏览器对应的限制可能并不相同。在使用 cookie 的时候，你心中应该有杆秤，不能随随便便往 cookie 里保存数据，一定要留意。下面是几条基本的限制，不同的浏览器限制不同：
+
+- 每个 cookie 最多 4096 bytes；
+- 每个域名最多保存 20 个 cookies；
+- 每个域名 cookie 的总大小最多 81920 bytes；
 
 ## 错误的做法
 
 - 避免用 cookie 当 storage
 
-cookie 虽然能够持久缓存一些数据，但是切记不能用来做业务相关的数据存储，这样会导致网络请求时会携带没必要的 cookie 信息。而且，不同的浏览器会对 cookie 大的个数和大小有限制；
+cookie 虽然能够持久缓存一些数据，但是切记不能用来做业务相关的数据存储，这样会导致网络请求时会携带没必要的 cookie 信息。而且，不同的浏览器会对 cookie 的个数和大小有限制；
 
 
 
@@ -81,6 +89,6 @@ cookie 虽然能够持久缓存一些数据，但是切记不能用来做业务�
 
 [js-cookie](https://github.com/js-cookie/js-cookie)
 
-
+[被乱用的 Cookie](https://mp.weixin.qq.com/s/iDOoeBA48gnoJUhkCHosqA)
 
 <GongZhongHao></GongZhongHao>

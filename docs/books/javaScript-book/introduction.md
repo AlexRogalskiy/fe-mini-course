@@ -28,11 +28,5 @@
 - [被我忽略的 6 个 JS 开发小技巧](https://mp.weixin.qq.com/s/UjC6vFXczrmCv5v0dbHK_Q)
 - [群里分享的关于我对 JS 闭包的理解](https://mp.weixin.qq.com/s/X0FLyn7aSJGq8y4m_6onpw)
 
-::: danger
-
-非常抱歉，本节内容正在撰写中，请先关注公众号「素燕」，内容更新及时通知你：
-
-:::
-
 
 <GongZhongHao></GongZhongHao>
