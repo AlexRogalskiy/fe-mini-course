@@ -1,8 +1,22 @@
 # 字符串
 
-在 JavaScript 中，字符串是 String，它又多个字符组合而成。
+在 JavaScript 中，字符串是 String，它又多个字符组合而成。表示方法如下：
+
+```js
+// 使用单引号表示
+let name = 'suyan';
+
+// 多行可换货
+let welcome = `Learn FE
+with suyan`;
+
+// 双引号表示
+let fe = "前端小课";
+```
 
 ## 拼接
+
+多个字符串进行拼接，形成一个字符串。
 
 ```js
 let name = 'suyan';
@@ -21,6 +35,8 @@ console.log(ret);
 ```
 
 ## 截取 slice
+
+从一个字符串中获取一个子字符串。
 
 ```js
 let name = '0123456789';
@@ -134,6 +150,8 @@ else {
 
 ## startsWith，endsWith
 
+判断字符串是否以某些字符开始或结尾，是否包含某些字符串。
+
 ```js
 let name = 'Learn FE with SuYan';
 let ret;
@@ -174,6 +192,8 @@ console.log(ret);
 
 ## 删除空格 trim
 
+删除字符串中的空格。
+
 ```js
 let name = "   suyan  ";
 let ret;
@@ -213,6 +233,8 @@ console.log(ret);
 ```
 
 ## 遍历字符
+
+遍历字符串中的所有字符。
 
 ```js
 for (const c of 'suyan') {

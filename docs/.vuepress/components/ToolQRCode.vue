@@ -11,7 +11,9 @@
 </template>
 
 <script>
-import QRCode from '../assets/js/qrcode.js';
+// document or window not defined
+// https://vuepress.vuejs.org/zh/guide/using-vue.html#%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84-api-%E8%AE%BF%E9%97%AE%E9%99%90%E5%88%B6
+// import QRCode from '../assets/js/qrcode.js';
 
 export default {
     data() {
@@ -20,11 +22,16 @@ export default {
         }
     },
     mounted() {
-        this.qrcode = new QRCode(document.getElementById("qrcode"), {
-            width : 160,
-            height : 160,
-            colorDark : "#000000",
-            colorLight : "#ffffff"
+        // 解决服务端无法识别 document 和 window 对象的问题
+        import('../assets/js/qrcode.js').then(module => {
+            const QRCode = module.default;
+            let qrcode = new QRCode(document.getElementById("qrcode"), {
+                width : 160,
+                height : 160,
+                colorDark : "#000000",
+                colorLight : "#ffffff"
+            });
+            this.qrcode = qrcode;
         });
     },
     watch: {

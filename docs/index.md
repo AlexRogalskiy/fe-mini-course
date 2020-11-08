@@ -25,12 +25,14 @@ features:
   href: /project-book/
 tools:
 - title: 二维码
-  href: /tools/qrcode/
+  href: /qrcode/
 - title: 在线Base64
-  href: /tools/base64/
+  href: /base64/
 - title: 在线 md5
-  href: /tools/md5/
+  href: /md5/
 - title: URL编码
-  href: /tools/urlencode/
+  href: /urlencode/
+- title: vim 精美壁纸
+  href: /vim/
 ---
 

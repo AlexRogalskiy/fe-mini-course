@@ -45,11 +45,11 @@
     flex-wrap no-wrap
     align-items flex-start
     justify-content space-between
-    overflow hidden
+    // overflow hidden
     .tool-item
       flex-grow 0
       flex-shrink 0
-      width 190px
+      width 160px
       height 50px
       line-height 50px
       background-color #363739

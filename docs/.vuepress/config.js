@@ -101,6 +101,7 @@ module.exports = {
           collapsable: true,
           children: [
             'javaScript-book/introduction',
+            'javaScript-book/number',
             'javaScript-book/string'
           ]
         },
