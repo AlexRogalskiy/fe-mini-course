@@ -3,7 +3,7 @@
     </div>
   </template>
   
-  <script>
+<script>
   export default {
     data() {
       return {
@@ -12,9 +12,9 @@
       }
     }
   }
-  </script>
+</script>
   
-  <style lang="stylus" scoped>
-  .tool-wrap
+<style lang="stylus" scoped>
+.tool-wrap
     background-color $navBgColor
-  </style>
+</style>

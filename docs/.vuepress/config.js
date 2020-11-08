@@ -202,7 +202,15 @@ module.exports = {
           title: '《前端开源库》',
           collapsable: false,
           children: [
-            '/'
+            'jest',
+            'clipboard',
+            'date',
+            'html2canvas',
+            'fs-extra',
+            'howler',
+            'codeMirror',
+            'md5',
+            'qrcode'
           ]
         }
       ],

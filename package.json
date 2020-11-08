@@ -25,5 +25,9 @@
   },
   "homepage": "https://github.com/lefex/fe-mini-course#readme",
   "dependencies": {
+    "async-validator": "^1.11.5",
+    "blueimp-md5": "^2.18.0",
+    "clipboard": "^2.0.6",
+    "element-ui": "^2.14.0"
   }
 }
