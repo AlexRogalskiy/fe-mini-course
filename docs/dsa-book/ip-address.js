@@ -5,11 +5,11 @@ const isIPv4 = ipStr => {
         return false;
     }
     for(let i = 0; i < nodes.length; i++) {
-        // 判断第一个字符是否以 0 开始
-        if (nodes[i].charCodeAt(0) === '0') {
+        // 转换成整数再转换成字符串看是否相等
+        // 可过滤掉 1e1, 00 这种情况
+        if (nodes[i] !== parseInt(nodes[i], 10).toString()) {
             return false;
         }
-        console.log(+nodes[i]);
         // 判断是否在 0-255 的范围内
         if (+nodes[i] < 0 || +nodes[i] > 255) {
             return false
@@ -18,7 +18,7 @@ const isIPv4 = ipStr => {
     return true;
 }
 
-console.log(isIPv4("1e1.4.5.6"));
+// console.log(isIPv4("1e1.4.5.6"));
 /**
 > +'e'
 NaN
@@ -39,15 +39,30 @@ const isIPv6 = ipStr => {
         return false;
     }
     for(let i = 0; i < nodes.length; i++) {
-        if (nodes[i].length > 4) {
+        console.log('-------');
+        console.log(nodes[i]);
+        // 长度不能大于 4，也不能是空
+        if (nodes[i].length > 4 || nodes[i].length === 0) {
             return false;
         }
-        for(let j = 0; j < nodes[i].length; j++) {
-            let value = nodes[i][j].toUpperCase().charCodeAt();
-            if ((value < 48 || value > 57) && (value < 65 || value > 70)) {
+        for (const c of nodes[i]) {
+            // 字符对应的数字编码
+            let value = c.charCodeAt(0);
+            // 97-102 a-f
+            // 65-70 A-F
+            // 48-57 0-9
+            if (isNaN(value) || !(
+                value > 96 && value < 103 || 
+                value > 64 && value < 71 || 
+                value > 47 && value < 58)
+            ) {
                 return false;
             }
+            lastValue = value;
+            console.log(c, '=', value);
         }
     }
     return true;
 }
+
+console.log(isIPv6("0db8:0:85a3:0000:0:8A2E:0370:733a"));

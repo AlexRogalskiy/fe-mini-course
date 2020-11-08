@@ -19,10 +19,74 @@ IPv6 地址由 8 组 16 进制的数字来表示，每组表示 16 比特。这
 
 然而，我们不能因为某个组的值为 0，而使用一个空的组，以至于出现 `::` 的情况。 比如， 2001:0db8:85a3::8A2E:0370:7334 是无效的 IPv6 地址。
 
-同时，在 IPv6 地址中，多余的 0 也是不被允许的。比如， 02001:0db8:85a3:0000:0000:8a2e:0370:7334 是无效的。
-
 来源：力扣（LeetCode）[链接](https://leetcode-cn.com/problems/validate-ip-address)
 :::
 
-## 代码
+## 代码实现
 
+判断是否为 IPv4 地址，用 JS 解这个问题时容易犯错，把字符串直接转成成数字，然后判断是否在 0 到 255 之间，但是：
+
+`parseInt('1e1', 10)`，并不是你期望的结果。解题思路：
+
+- 被拆分的长度必须为 4；
+- 每个节点的值只能是整数且在 0-255 之间；
+
+```js
+const isIPv4 = ipStr => {
+    const nodes = ipStr.split('.');
+    // 必须是 4 个数字
+    if (nodes.length !== 4) {
+        return false;
+    }
+    for(let i = 0; i < nodes.length; i++) {
+        // 转换成整数再转换成字符串看是否相等
+        // 可过滤掉 1e1, 00 这种情况
+        if (nodes[i] !== parseInt(nodes[i], 10).toString()) {
+            return false;
+        }
+        // 判断是否在 0-255 的范围内
+        if (+nodes[i] < 0 || +nodes[i] > 255) {
+            return false
+        }
+    }
+    return true;
+}
+```
+
+判断是否为 IPv6 地址：
+
+- 被拆分的长度必须为 4=8；
+- 每个节点的长度要小于 4，且大于 0；
+- 每个字符要由0-9、a-f、A-F 组成
+
+```js
+const isIPv6 = ipStr => {
+    const nodes = ipStr.split(':');
+    // 必须是 8 个节点
+    if (nodes.length !== 8) {
+        return false;
+    }
+    for(let i = 0; i < nodes.length; i++) {
+        // 长度不能大于 4，也不能是空
+        if (nodes[i].length > 4 || nodes[i].length === 0) {
+            return false;
+        }
+        // 遍历字符串中的字符
+        for (const c of nodes[i]) {
+            // 字符对应的数字编码
+            let value = c.charCodeAt(0);
+            // 97-102 a-f
+            // 65-70 A-F
+            // 48-57 0-9
+            if (isNaN(value) || !(
+                value > 96 && value < 103 || 
+                value > 64 && value < 71 || 
+                value > 47 && value < 58)
+            ) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+```
