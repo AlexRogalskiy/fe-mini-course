@@ -4,7 +4,7 @@
 
 这道题有个坑点，题目中判断一个字符串是否为 IP 地址，但是并没有说明是 IPv4 还是 IPv6，如果你在写算法的时候只考虑了 IPv4，但忽略了 IPv6，这时候面试官可能会继续让你写出 IPv6 求解过程。
 
-在写算法之前，需要明白 IPv4 和 IPv6 的概念，如果面试官并没有告诉你这两者的定义，也许在考你计算机的基础知识，关于 IP 地址的定义。我们看一下 LeetCode 上关于 IPv4 和 IPv6 的定义。
+在写算法之前，需要明白 IPv4 和 IPv6 的概念，如果面试官并没有告诉你这两者的定义，也许是考你计算机的基础知识，关于 IP 地址的定义。我们看一下 LeetCode 上关于 IPv4 和 IPv6 的定义。
 
 :::tip
 - IPv4
@@ -24,34 +24,14 @@ IPv6 地址由 8 组 16 进制的数字来表示，每组表示 16 比特。这
 
 ## 代码实现
 
-判断是否为 IPv4 地址，用 JS 解这个问题时容易犯错，把字符串直接转成成数字，然后判断是否在 0 到 255 之间，但是：
+判断是否为 IPv4 地址，用 JS 解这个问题时容易犯错，把字符串直接转成数字，然后判断是否在 0 到 255 之间，但是：
 
 `parseInt('1e1', 10)`，并不是你期望的结果。解题思路：
 
 - 被拆分的长度必须为 4；
 - 每个节点的值只能是整数且在 0-255 之间；
 
-```js
-const isIPv4 = ipStr => {
-    const nodes = ipStr.split('.');
-    // 必须是 4 个数字
-    if (nodes.length !== 4) {
-        return false;
-    }
-    for(let i = 0; i < nodes.length; i++) {
-        // 转换成整数再转换成字符串看是否相等
-        // 可过滤掉 1e1, 00 这种情况
-        if (nodes[i] !== parseInt(nodes[i], 10).toString()) {
-            return false;
-        }
-        // 判断是否在 0-255 的范围内
-        if (+nodes[i] < 0 || +nodes[i] > 255) {
-            return false
-        }
-    }
-    return true;
-}
-```
+<CR_IP isIPv4="true"></CR_IP>
 
 判断是否为 IPv6 地址：
 
@@ -59,34 +39,8 @@ const isIPv4 = ipStr => {
 - 每个节点的长度要小于 4，且大于 0；
 - 每个字符要由0-9、a-f、A-F 组成
 
-```js
-const isIPv6 = ipStr => {
-    const nodes = ipStr.split(':');
-    // 必须是 8 个节点
-    if (nodes.length !== 8) {
-        return false;
-    }
-    for(let i = 0; i < nodes.length; i++) {
-        // 长度不能大于 4，也不能是空
-        if (nodes[i].length > 4 || nodes[i].length === 0) {
-            return false;
-        }
-        // 遍历字符串中的字符
-        for (const c of nodes[i]) {
-            // 字符对应的数字编码
-            let value = c.charCodeAt(0);
-            // 97-102 a-f
-            // 65-70 A-F
-            // 48-57 0-9
-            if (isNaN(value) || !(
-                value > 96 && value < 103 || 
-                value > 64 && value < 71 || 
-                value > 47 && value < 58)
-            ) {
-                return false;
-            }
-        }
-    }
-    return true;
-}
-```
+<CR_IP></CR_IP>
+
+## 知识要点
+
+本题用 JavaScript 实现的时候，需要注意把字符串转换成整形时的「坑」，字符的比较可根据字符编码的值进行比较。

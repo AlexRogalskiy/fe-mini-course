@@ -24,3 +24,32 @@
     // true
     console.log(Number.isInteger(1));
 }
+
+{
+    console.log(+'s'); // Nan
+    console.log(+'1e1'); // 10
+    console.log(+'100'); // 100
+
+    console.log(parseInt('s')); // Nan
+    console.log(parseInt('1e1', 10)); // 1
+    console.log(parseInt('100')); // 100
+    console.log(parseInt('6s1')); // 6
+    console.log(+('6s1')); // NaN
+    console.log(+('6e1')); // 60
+
+    console.log(+'1e1'); // 10 = 1
+    console.log(+'1e2'); // 100 = 1 * 10*10
+    console.log(+'2e2'); // 100 = 2 * 10*10
+    console.log('-------');
+
+    function syParseInt(str) {
+        if (str !== Number(str).toString()) {
+            return NaN;
+        }
+        return +str;
+    }
+    console.log(syParseInt('s')); // NaN
+    console.log(syParseInt('1e1', 10)); // NaN
+    console.log(syParseInt('100')); // 100
+    console.log(syParseInt('6s1')); // NaN
+}
