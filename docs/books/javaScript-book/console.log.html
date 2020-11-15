@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console.log</title>
+</head>
+<body>
+    <script>
+        let name = 'suyan';
+        let name2 = 'lefex';
+        let age = 20;
+        let person = {
+            name: 'suyan_person',
+            age: 20
+        };
+        let names = ['suyan_arr', 'lefex_arr'];
+        
+        const reDefineConsoleLog = function (args) {
+            const orgLog = console.log;
+            const calls = [];
+            console.log = (...args) => {
+                let logs = [];
+                for(let i = 0; i < args.length; i++) {
+                    let aLog = args[i];
+                    let logStr = JSON.stringify(aLog);
+                    if (!logStr) {
+                        if (typeof aLog === 'function') {
+                            // function can not 
+                            logStr = aLog.constructor;
+                        }
+                    }
+                    logs.push(logStr);
+                }
+                let retLog = logs.join(' , ');
+                // 还原
+                console.log = orgLog;
+            };
+        };
+        reDefineConsoleLog();
+        console.log(null);
+        console.log(name, name2);
+        console.log(name, name2, age);
+        console.log(name, name2, age, person);
+        console.log(name, name2, age, person, names);
+        console.log(reDefineConsoleLog);
+        
+    </script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <template>
-    <CodeRun :code="isIPv4 ? ipv4Code : ipv6Code"></CodeRun>
+    <CodeRun :code="isIPv4 === '1' ? ipv4Code : ipv6Code"></CodeRun>
 </template>
 
 <script>
@@ -59,11 +59,13 @@ const ipv6Code = `const isIPv6 = ipStr => {
         }
     }
     return true;
-}`;
+}
+console.log(isIPv6('256.0.1.2'));
+`;
 
 export default {
     props: {
-        isIPv4: Boolean
+        isIPv4: String
     },
     data() {
         return {

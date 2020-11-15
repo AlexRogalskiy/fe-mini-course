@@ -1,9 +1,11 @@
 <template>
     <div class="code-run-wrap">
-        <codemirror
+        <component
             v-model="code"
+            v-if="dynamicComponent"
+            :is="dynamicComponent"
             :options="cmOptions">
-        </codemirror>
+        </component>
         <div class="action-wrap">
             <div class="action-item run" @click="run"></div>
             <div class="action-item clear" @click="clear"></div>
@@ -16,14 +18,16 @@
         <!-- 全屏代码执行 -->
         <el-dialog
             :visible.sync="dialogVisible"
-            :before-close="handleClose"
+            :before-close="fullscreen"
             fullscreen>
             <div class="content-wrap">
-                <codemirror
-                    class="code-pannel"
+                <component
                     v-model="code"
+                    class="code-pannel"
+                    v-if="dynamicComponent"
+                    :is="dynamicComponent"
                     :options="cmOptions">
-                </codemirror>
+                </component>
                 <div class="action-wrap">
                     <div class="action-item run" @click="run"></div>
                     <div class="action-item clear" @click="clear"></div>
@@ -39,15 +43,14 @@
 </template>
 <!-- https://www.npmjs.com/package/vue-codemirror -->
 <script>
-import { codemirror } from 'vue-codemirror'
+// import { codemirror } from 'vue-codemirror'
 // require styles
-import 'codemirror/mode/javascript/javascript.js'
 import 'codemirror/lib/codemirror.css'
 import '../assets/css/base16-dark.css'
 
 export default {
     components: {
-        codemirror
+        // codemirror
     },
     props: {
         code: String
@@ -66,21 +69,46 @@ export default {
           logs: [],
           dialogVisible: false,
           logVisible: false,
-          dlogVisible: true
+          dlogVisible: true,
+          dynamicComponent: null
       }
     },
     mounted() {
-        window.console.log = msg => {
-            // 有打印日志时显示输出控制台
-            this.logVisible = true;
-            this.dlogVisible = true;
-            let logshow = `${msg}`;
-            this.logs.push(logshow);
-        }
+        // 服务端渲染问题
+        import('codemirror/mode/javascript/javascript.js').then(module => {});
+        import('vue-codemirror').then(module => {
+            this.dynamicComponent = module.default.codemirror;
+        });
     },
     methods: {
         run(item) {
+            // 需要在代码执行的时候，重新定义log
+            this.reDefineConsoleLog();
             eval(this.code);
+            console.log = this.orgLog;
+        },
+        reDefineConsoleLog(args) {
+            this.orgLog = console.log;
+            const calls = [];
+            console.log = (...args) => {
+                let logs = [];
+                for(let i = 0; i < args.length; i++) {
+                    let aLog = args[i];
+                    let logStr = JSON.stringify(aLog);
+                    if (!logStr) {
+                        if (typeof aLog === 'function') {
+                            // function can not 
+                            logStr = aLog.constructor;
+                        }
+                    }
+                    logs.push(logStr);
+                }
+                this.logs.push(logs.join(' , '));
+                // 有打印日志时显示输出控制台
+                this.logVisible = true;
+                this.dlogVisible = true;
+                this.orgLog(...args);
+            };
         },
         clear() {
             this.logs = [];
@@ -90,6 +118,7 @@ export default {
         },
         closeConsole() {
             this.logVisible = !this.logVisible;
+            this.dlogVisible = !this.dlogVisible;
         }
     }
 }
@@ -104,11 +133,12 @@ export default {
         padding 10px
         background-color #292B35
         height 120px
-        overflow hidden auto
+        overflow hidden scroll
         .log
             padding 4px 0
             font-size 14px
             color #fff
+            border-bottom .5px solid #333
     .action-wrap
         display flex
         justify-content flex-end
@@ -166,6 +196,11 @@ export default {
                 flex 1
                 height 100%
                 padding 20px 10px
+            .vue-codemirror
+                .CodeMirror
+                    height 100%
+                    padding 20px 0
+                    font-size 18px
         .el-dialog__header
             display none
             position absolute
@@ -175,7 +210,7 @@ export default {
             .CodeMirror
                 height 100%
                 padding 20px 0
-                font-size 18px
+                font-size 15px
         .el-dialog__body
             background-color #292B35
             padding 0
