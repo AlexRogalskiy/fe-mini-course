@@ -19,10 +19,10 @@ features:
   details: 学好了该找工作了
   cover: https://s1.ax1x.com/2020/10/11/0cTj5F.png
   href: /interview-book/
-- title: 《前端项目实战》
-  details: 实践才能更快地进步
+- title: 《Vue3中文手册》
+  details: 简易易懂的 Vue3 手册
   cover: https://s1.ax1x.com/2020/10/11/0cTUHK.png
-  href: /project-book/
+  href: /vue3-book/
 tools:
 - title: 二维码
   href: /qrcode.html

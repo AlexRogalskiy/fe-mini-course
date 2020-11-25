@@ -1,4 +1,4 @@
-#  Number 类型
+#  JavaScript 中的 Number 类型
 
 Number 是数值的引用类型。
 

@@ -103,7 +103,9 @@ module.exports = {
           children: [
             'javaScript-book/introduction',
             'javaScript-book/number',
-            'javaScript-book/string'
+            'javaScript-book/string',
+            'javaScript-book/hookConsoleLog',
+            'javaScript-book/csv'
           ]
         },
         {
@@ -179,6 +181,13 @@ module.exports = {
             'online-book/introduction'
           ]
         },
+        {
+          title: '第 15 章 typeScript',
+          collapsable: true,
+          children: [
+            'ts-book/introduction'
+          ]
+        },
       ],
       '/resource-book/': [
         {
@@ -225,12 +234,29 @@ module.exports = {
           ]
         }
       ],
-      '/project-book/': [
+      '/vue3-book/': [
         {
-          title: '《前端项目实战》',
+          title: '《Vue3中文手册》',
           collapsable: false,
           children: [
-            '/'
+            'installation',
+            'vue-instance',
+            'template',
+            'vif',
+            'v-for',
+            'lifecycle',
+            'data',
+            'class',
+            'style',
+            'component',
+            'computed',
+            'watcher',
+            'refs',
+            'solt',
+            'event',
+            'animation',
+            'async_component',
+            'input'
           ]
         }
       ]

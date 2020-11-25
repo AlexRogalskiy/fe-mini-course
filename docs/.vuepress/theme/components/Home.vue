@@ -57,6 +57,13 @@ export default {
     BookCover
   },
 
+  mounted() {
+    import('codemirror/mode/javascript/javascript.js').then(module => {});
+    import('vue-codemirror').then(module => {
+        // this.dynamicComponent = module.default.codemirror;
+    });
+  },
+
   computed: {
     data () {
       return this.$page.frontmatter

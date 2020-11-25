@@ -1,4 +1,4 @@
-# 字符串
+# JavaScript 中的字符串
 
 在 JavaScript 中，字符串是 String，它又多个字符组合而成。表示方法如下：
 
