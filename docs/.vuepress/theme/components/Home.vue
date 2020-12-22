@@ -58,10 +58,10 @@ export default {
   },
 
   mounted() {
-    import('codemirror/mode/javascript/javascript.js').then(module => {});
-    import('vue-codemirror').then(module => {
-        // this.dynamicComponent = module.default.codemirror;
-    });
+    // import('codemirror/mode/javascript/javascript.js').then(module => {});
+    // import('vue-codemirror').then(module => {
+    //     // this.dynamicComponent = module.default.codemirror;
+    // });
   },
 
   computed: {

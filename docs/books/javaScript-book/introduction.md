@@ -29,4 +29,6 @@
 - [群里分享的关于我对 JS 闭包的理解](https://mp.weixin.qq.com/s/X0FLyn7aSJGq8y4m_6onpw)
 
 
-<GongZhongHao></GongZhongHao>
+## 学习资料
+
+- [MDN 中的 JavaScript 手册](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)

@@ -15,5 +15,3 @@
 ## 公众号
 
 会经常分享一些前端知识，以及在学习前端知识时遇到的问题。
-
-<GongZhongHao></GongZhongHao>

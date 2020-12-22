@@ -140,49 +140,42 @@ module.exports = {
           ]
         },
         {
-          title: '第 9 章 前端框架Vue',
-          collapsable: true,
-          children: [
-            'vue-book/introduction'
-          ]
-        },
-        {
-          title: '第 10 章 前端构建',
+          title: '第 9 章 前端构建',
           collapsable: true,
           children: [
             'package-book/introduction'
           ]
         },
         {
-          title: '第 11 章 Node.js',
+          title: '第 10 章 Node.js',
           collapsable: true,
           children: [
             'nodejs-book/introduction'
           ]
         },
         {
-          title: '第 12 章 编译原理',
+          title: '第 11 章 编译原理',
           collapsable: true,
           children: [
             'compiler-book/introduction'
           ]
         },
         {
-          title: '第 13 章 前端动画',
+          title: '第 12 章 前端动画',
           collapsable: true,
           children: [
             'animation-book/introduction'
           ]
         },
         {
-          title: '第 14 章 上线相关',
+          title: '第 13 章 上线相关',
           collapsable: true,
           children: [
             'online-book/introduction'
           ]
         },
         {
-          title: '第 15 章 typeScript',
+          title: '第 14 章 typeScript',
           collapsable: true,
           children: [
             'ts-book/introduction'
@@ -236,26 +229,24 @@ module.exports = {
       ],
       '/vue3-book/': [
         {
-          title: '《Vue3中文手册》',
+          title: '《读懂Vue3编程思想》',
           collapsable: false,
           children: [
+            '/',
             'installation',
             'vue-instance',
             'template',
-            'vif',
-            'v-for',
-            'lifecycle',
-            'data',
-            'class',
             'style',
             'component',
-            'computed',
-            'watcher',
+            'provide',
             'refs',
             'solt',
             'event',
             'animation',
             'async_component',
+            'composition-api',
+            'custom-directives',
+            'reactivity',
             'input'
           ]
         }
