@@ -9,22 +9,26 @@
       </BookCover>
     </header>
 
-    <div
-      v-if="data.tools && data.tools.length"
-      class="tools"
-    >
+    <div class="tool-wrap">
+      <p class="desk-title">工具</p>
       <div
-        v-for="(tool, index) in data.tools"
-        :key="index"
-        class="tool-item"
+        v-if="data.tools && data.tools.length"
+        class="tools"
       >
-        <a :href="tool | actionLink">
-          <h2>{{ tool.title }}</h2>
-        </a>
+        <div
+          v-for="(tool, index) in data.tools"
+          :key="index"
+          class="tool-item"
+        >
+          <a :href="tool | actionLink">
+            <h2>{{ tool.title }}</h2>
+          </a>
+        </div>
       </div>
     </div>
 
-    <p class="desk-title">我的小书</p>
+  <div class="small-book-wrap">
+    <p class="desk-title">小书</p>
     <div
       v-if="data.features && data.features.length"
       class="features"
@@ -41,6 +45,7 @@
         </a>
       </div>
     </div>
+  </div>
 
     <Content class="theme-default-content custom" />
   </main>

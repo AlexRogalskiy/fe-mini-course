@@ -69,9 +69,8 @@ export default {
 
 当然不是，用 word 这种文档软件岂不得累死，一个字母一个字母敲。写代码有专门的软件，你可以把它看做是一个特殊的 ”word“ 软件，专门用来写代码。不同的编程语言往往有不同的编写软件。而我们写前端最常用的是 [VSCode](https://code.visualstudio.com/)。
 
-::: danger
+::: tip
 
 本节完！如果你对本节内容有不明白的地方，可加入读者群交流（微信 wsy9871），或关注公众号「素燕」。下节内容见。
 
 :::
-<GongZhongHao></GongZhongHao>

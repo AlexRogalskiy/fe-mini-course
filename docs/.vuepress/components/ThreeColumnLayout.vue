@@ -110,6 +110,7 @@
 
     .action-item {
         background-color: #333;
+        color: #fff;
         display: inline-block;
         padding: 10px 20px;
         flex: 1;

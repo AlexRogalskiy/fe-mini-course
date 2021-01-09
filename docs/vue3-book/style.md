@@ -8,7 +8,7 @@
 
 在 Vue 模板中可以直接添加 class 属性，而且支持多种方式，比如对象、数组、JS表达式，这些说白了就是为了能够更灵活修改 class。
 
-如果，class 如果在后面的代码中不会涉及到修改，直接使用静态的 class 就行：
+如果 css 在代码中不会涉及到修改，直接使用静态的 class 就行：
 
 ```html
 <div class="title">《前端小课》</div>
@@ -209,7 +209,7 @@ data() {
 
 ```html
 <template>
-  <!-- 可以给 Home 组件中添加 class （root 和 root-app） ，与组件的根 class 不冲突-->
+  <!-- 可以给 Home 组件中添加 class （root 和 root-app），与组件的根 class 不冲突-->
   <Home class="root"/>
 </template>
 

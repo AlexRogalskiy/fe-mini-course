@@ -1,7 +1,8 @@
 .home
   padding $navbarHeight 2rem 0
   max-width $homePageWidth
-  margin 0px auto
+  background-color $themeBgColor
+  margin 20px auto 0 auto
   display block
   .hero
     text-align center
@@ -33,104 +34,111 @@
       border-bottom 1px solid darken($accentColor, 10%)
       &:hover
         background-color lighten($accentColor, 10%)
-  .desk-title
-    color: #fff;
-    font-size: 30px;
-    font-family: PingFangSC-Medium;
-  .tools
-    border-top 1px solid #000
-    padding 1.2rem 0
-    margin 2.5rem 0
-    display flex
-    flex-wrap no-wrap
-    align-items flex-start
-    justify-content space-between
-    .tool-item
-      flex-grow 0
-      flex-shrink 0
-      width 140px
-      height 3.125rem
-      line-height 3.125rem
-      background-color #363739
-      text-align center
-      margin-right 1.25rem
-      border-radius 0.25rem
-      cursor pointer
-      &:last-child
-        margin-right 0
-      &:hover
-        background-color #555
-      h2
-        font-size 16px
-        font-weight 500
-        border-bottom none
-        padding-bottom 0
-        color #ccc
-        font-family PingFangSC-Medium
-        padding 0 8px
-
-  .features
-    border-top 1px solid $borderColor
-    padding 1.2rem 0
-    margin 2.5rem 0
-    display flex
-    flex-wrap no-wrap
-    align-items flex-start
-    justify-content space-between
-    overflow hidden
-    .feature
-      flex-grow 0
-      flex-shrink 0
-      width 190px
-      height 260px
-      background-color #fff
-      border-top-right-radius 4px
-      border-bottom-right-radius 4px
-      text-align center
-      margin-right 20px
-      border-radius 5px 8px 8px 5px
-      transition .5s linear
-      transform-style preserve-3d
-      transform-origin left center 0px
-      &::before
-        content ""
-        position absolute
-        width 10px
-        height calc(100% + 2px)
-        top -1px
-        z-index 100
-        border-radius 2px
-        left 0
-        transition 2s ease
-        background linear-gradient(to right, #9c2e2b 0%, #cc4b48 12%, #9c2e2b 25%, #cc4b48 37%, #9c2e2b 50%, #cc4b48 62%, #9c2e2b 75%, #cc4b48 87%, #9c2e2b 100%)
-      &:last-child
-        margin-right 0
-      div
-        width 100%
-        height 140px
-        margin-top 10px
-        background-position cover
-        background-repeat no-repeat
-        background-size 100% 100%
-      h2
-        font-size 16px
-        font-weight 500
-        border-bottom none
-        padding-bottom 0
-        color lighten(#17181a, 10%)
-        font-family PingFangSC-Medium
-        padding 0 8px
-      p
-        color #333
-        max-height 60px
-        height 40px
-        padding 0 8px 8px
-        font-size 14px
+  .tool-wrap
+    background-color $themeBgColor3
+    border-radius 8px
+    padding 20px 30px
+    margin-top 20px
+    .tools
+      display flex
+      flex-wrap no-wrap
+      align-items flex-start
+      justify-content space-between
+      margin 20px 0
+      .tool-item
+        flex-grow 0
+        flex-shrink 0
+        width 140px
+        height 3.125rem
+        line-height 3.125rem
+        background-color $themeBgColor
+        text-align center
+        margin-right 1.25rem
+        border-radius 0.25rem
+        cursor pointer
+        &:last-child
+          margin-right 0
+        &:hover
+          background-color $themeBgColor2Hover
+        h2
+          font-size 16px
+          font-weight 500
+          border-bottom none
+          padding-bottom 0
+          color $textColor
+          font-family PingFangSC-Medium
+          padding 0 8px
+  .small-book-wrap
+    background-color $themeBgColor3
+    margin 20px 0
+    border-radius 8px
+    padding 20px 30px
+    .features
+      padding 1.2rem 0
+      display flex
+      flex-wrap no-wrap
+      align-items flex-start
+      justify-content space-between
+      overflow hidden
+      .feature
+        flex-grow 0
+        flex-shrink 0
+        width 190px
+        height 260px
+        background-color #fff
+        border-top-right-radius 4px
+        border-bottom-right-radius 4px
+        text-align center
+        margin-right 20px
+        border-radius 5px 8px 8px 5px
+        transition .5s linear
+        transform-style preserve-3d
+        transform-origin left center 0px
+        border 1px solid $borderColor
+        &::before
+          content ""
+          position absolute
+          width 10px
+          height calc(100% + 2px)
+          top -1px
+          z-index 100
+          border-radius 2px
+          left 0
+          transition 2s ease
+          background linear-gradient(to right, #9c2e2b 0%, #cc4b48 12%, #9c2e2b 25%, #cc4b48 37%, #9c2e2b 50%, #cc4b48 62%, #9c2e2b 75%, #cc4b48 87%, #9c2e2b 100%)
+        &:last-child
+          margin-right 0
+        div
+          width 100%
+          height 140px
+          margin-top 10px
+          background-position cover
+          background-repeat no-repeat
+          background-size 100% 100%
+        h2
+          font-size 16px
+          font-weight 500
+          border-bottom none
+          padding-bottom 0
+          color lighten(#17181a, 10%)
+          font-family PingFangSC-Medium
+          padding 0 8px
+        p
+          color #333
+          max-height 60px
+          height 40px
+          padding 0 8px 8px
+          font-size 14px
   .footer
     padding 2.5rem
     border-top 1px solid $borderColor
     text-align center
     color lighten($textColor, 25%)
+  .desk-title
+    color: $textColor;
+    font-size: 30px;
+    font-family: PingFangSC-Medium;
+    margin 0
 
 @media (max-width: $MQMobileNarrow)
   .home

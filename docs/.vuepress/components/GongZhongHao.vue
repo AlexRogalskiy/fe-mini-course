@@ -27,7 +27,7 @@ export default {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    background-color: #1f2022;
+    background-color: $themeBgColor3;
     .content {
         display: flex;
         margin: 1.875rem auto;
@@ -46,12 +46,12 @@ export default {
             height: 100%;
             margin: 0 1.25rem 0;
             .title {
-                color: #aaa;
+                color: #222;
                 font-size: 1.125rem;
                 padding: 0.5rem 0;
             }
             .copyright {
-                color: #aaa;
+                color: #222;
                 font-size: 0.875rem;
                 padding-top: 0.5rem;
             }

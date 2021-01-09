@@ -76,5 +76,3 @@ npm run start
 
 
 本节内容你需要能够把 webserver 跑起来，页面可以正常访问，并且学会终端使用，了解什么是 node 和 npm。大家加油！
-
-<GongZhongHao></GongZhongHao>

@@ -99,7 +99,7 @@ $navbar-horizontal-padding = 10rem
 .navbar
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
-  background-color #1f2022
+  background-color $themeBgColor3
   a, span, img
     display inline-block
   .logo

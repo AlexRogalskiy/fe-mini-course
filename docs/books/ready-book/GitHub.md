@@ -6,6 +6,3 @@
 
 如果你打算开启编程事业，请一定要注册一个 GitHub 账号，把你写的代码放上去。比如我的 [GitHub](https://github.com/lefex)。如果你不知道 GitHub 咋么使用，可以用百度找一些资料学习一下，或者加入我们的编程小白群（叫我微信 wsy9871，备注小白）。
 
-
-
-<GongZhongHao></GongZhongHao>

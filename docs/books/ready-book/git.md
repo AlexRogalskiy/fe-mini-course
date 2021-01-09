@@ -37,5 +37,3 @@ git clone git@github.com:lefex/FE.git
 
 
 [一本比较好的 git 书](https://git-scm.com/book/en/v2)
-
-<GongZhongHao></GongZhongHao>

@@ -5,7 +5,7 @@
             <div class="des-box">
                 <div class="title">帮助 10W 人入门并进阶前端</div>
                 <div class="title">微信扫码关注我，和我一起成长</div>
-                <div class="copyright">Copyright © 2020 素燕</div>
+                <div class="copyright">Copyright © 2021 素燕</div>
             </div>
         </div>
     </div>
@@ -27,7 +27,8 @@ export default {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    background-color: #1f2022;
+    background-color: $themeBgColor3;
+    border-top: 1px solid $borderColor
     .content {
         display: flex;
         margin: 1.875rem auto;
@@ -46,12 +47,12 @@ export default {
             height: 100%;
             margin: 0 1.25rem 0;
             .title {
-                color: #aaa;
+                color: $textColor2;
                 font-size: 1.125rem;
                 padding: 0.5rem 0;
             }
             .copyright {
-                color: #aaa;
+                color: $textColor2;
                 font-size: 0.875rem;
                 padding-top: 0.5rem;
             }

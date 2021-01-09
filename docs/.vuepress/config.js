@@ -86,8 +86,7 @@ module.exports = {
           collapsable: true,
           children: [
             'css-book/flexbox',
-            'css-book/layout',
-            'css-book/scrollbar'
+            'css-book/layout'
           ]
         },
         {

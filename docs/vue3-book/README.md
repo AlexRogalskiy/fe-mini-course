@@ -13,3 +13,23 @@
 <GongZhongHao></GongZhongHao>
 
 [Vue3官方文档](https://v3.vuejs.org/guide/introduction.html)
+
+yarn --ignore-scripts
+添加 sourcemap 进行调试，不是单文件
+"dev": "node scripts/dev.js --sourcemap",
+yarn dev 编译
+
+runtime 运行时，程序运行相关
+compiler 编译相关
+reactivity 响应式
+
+打包格式 cjs，umd，esm
+
+cmd+p打开某个文件
+
+实例的真正创建者，renderer 渲染器
+渲染函数：把虚拟 DOM 变成真正的 DOM
+patch 把虚拟dom转换为真实 dom 的实际操作者
+其实是根组件提供的 render 函数，如果没有就需要编译器来编译生成
+
+createRenderer 创建自定义渲染器

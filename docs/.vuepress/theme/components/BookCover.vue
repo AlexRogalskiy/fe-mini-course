@@ -72,9 +72,12 @@ export default {
     display: flex;
     justify-self: center;
     align-items: center;
+    background-color $themeBgColor3
+    border-radius: 8px;
+    padding 0 30px;
+    marigin 0;
     .cover-wrap {
         position: relative;
-        margin-left: 1.875rem;
         width: 21rem;
         height: 500px;
         flex-shrink: 0;
@@ -112,7 +115,7 @@ export default {
             left: -0.375rem;
             width: 20rem;
             height: 26.875rem;
-            background-color: #eee;
+            background-color: $themeBgColor;
             padding: 0.625rem 0;
             z-index: 3;
             transform: skewY(-2deg);
@@ -128,7 +131,7 @@ export default {
             left: 0;
             width: 19.375rem;
             height: 26.875rem;
-            background-color: #ddd;
+            background-color: $themeBgColor;
             border-top-right-radius: 0.3125rem;
             border-bottom-right-radius: 0.3125rem;
             z-index: 1;
@@ -141,7 +144,7 @@ export default {
             left: 0;
             width: 290px;
             height: 430px;
-            background-color: #fff;
+            background-color: $themeBgColor3;
             border-top-right-radius: 0.3125rem;
             border-bottom-right-radius: 0.3125rem;
             z-index: 5;
@@ -149,6 +152,7 @@ export default {
             padding: 0.125rem 0;
             font-family: PingFangSC-Medium;
             overflow: hidden;
+            border: 1px solid #ccc;
             .logo {
                 width: 18.75rem;
                 height: 15rem;
@@ -183,14 +187,13 @@ export default {
         .book-title {
             font-size: 2.5rem;
             font-family: PingFangSC-Medium;
-            color: #fff;
+            color: $textColor;
             margin: 5rem 0 0 0;
         }
         .des {
             font-size: 1.25rem;
-            color: #ccc;
+            color: $textColor;
             letter-spacing: 0.0625rem;
-            font-family: PingFangSC-Medium;
         }
     }
 }
