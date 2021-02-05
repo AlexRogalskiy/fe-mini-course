@@ -74,7 +74,7 @@ export default {
     align-items: center;
     background-color $themeBgColor3
     border-radius: 8px;
-    padding 0 30px;
+    padding 0 30px 60px;
     marigin 0;
     .cover-wrap {
         position: relative;
