@@ -9,6 +9,26 @@
       </BookCover>
     </header>
 
+    <div class="small-book-wrap">
+      <p class="desk-title">小书</p>
+      <div
+        v-if="data.features && data.features.length"
+        class="features"
+      >
+        <div
+          v-for="(feature, index) in data.features"
+          :key="index"
+          class="feature"
+        >
+          <a :href="feature | actionLink">
+            <div :style="{backgroundImage: 'url(' + feature.cover + ')'}""></div>
+            <h2>{{ feature.title }}</h2>
+            <p>{{ feature.details }}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <div class="tool-wrap">
       <p class="desk-title">工具</p>
       <div
@@ -26,26 +46,6 @@
         </div>
       </div>
     </div>
-
-  <div class="small-book-wrap">
-    <p class="desk-title">小书</p>
-    <div
-      v-if="data.features && data.features.length"
-      class="features"
-    >
-      <div
-        v-for="(feature, index) in data.features"
-        :key="index"
-        class="feature"
-      >
-        <a :href="feature | actionLink">
-          <div :style="{backgroundImage: 'url(' + feature.cover + ')'}""></div>
-          <h2>{{ feature.title }}</h2>
-          <p>{{ feature.details }}</p>
-        </a>
-      </div>
-    </div>
-  </div>
 
     <Content class="theme-default-content custom" />
   </main>

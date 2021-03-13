@@ -173,13 +173,6 @@ module.exports = {
             'online-book/introduction'
           ]
         },
-        {
-          title: '第 14 章 typeScript',
-          collapsable: true,
-          children: [
-            'ts-book/introduction'
-          ]
-        },
       ],
       '/resource-book/': [
         {
@@ -188,6 +181,24 @@ module.exports = {
           children: [
             'tools',
             'learn'
+          ]
+        }
+      ],
+      '/ts-book/': [
+        {
+          title: '《TS100小集》',
+          collapsable: false,
+          children: [
+            'project-setting',
+            'var',
+            'array',
+            'function',
+            'class',
+            'interface',
+            'module',
+            'record',
+            'T',
+            'type'
           ]
         }
       ],
