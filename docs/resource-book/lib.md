@@ -10,3 +10,8 @@
 #### 打包构建
 
 - [parcel](https://github.com/parcel-bundler/parcel)
+ 
+#### 模拟浏览器
+
+Puppeteer 是 Chrome 开发团队在 2017 年发布的一个 Node.js 包，用来模拟 Chrome 浏览器的运行。
+- [puppeteer](https://github.com/puppeteer/puppeteer/)

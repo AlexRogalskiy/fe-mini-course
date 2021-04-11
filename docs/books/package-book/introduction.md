@@ -14,11 +14,4 @@
 - [这些资料助你搞透 Webpack](https://mp.weixin.qq.com/s/fu58YXwN3Mxn-7MFBNDCQw)
 - [统一管理多项目 webpack 配置文件](https://mp.weixin.qq.com/s/6J9X8s_QfQcv2g5Wr-qn-A)
 
-::: danger
-
-非常抱歉，本节内容正在撰写中，请先关注公众号「素燕」，内容更新及时通知你：
-
-:::
-
-
 <GongZhongHao></GongZhongHao>

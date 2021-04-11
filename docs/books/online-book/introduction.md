@@ -11,11 +11,4 @@
 - [10x 程序员 · 提高 shell 的使用效率](https://mp.weixin.qq.com/s/cHexunWiAy4ms32UWVz7_Q)
 - [与前端部署相关的一些关键词](https://mp.weixin.qq.com/s/GDXvtesbsTgE8XIrkBKfwA)
 
-::: danger
-
-非常抱歉，本节内容正在撰写中，请先关注公众号「素燕」，内容更新及时通知你：
-
-:::
-
-
 <GongZhongHao></GongZhongHao>

@@ -8,11 +8,4 @@
 - [彻底搞懂 offsetX、scrollX、clientX 的区别](https://mp.weixin.qq.com/s/HYD_WEG8ObWAe4WYvqDdPg)
 - [了如指掌 · DOM 舆图](https://mp.weixin.qq.com/s/aIfJC1fDf-y0SqvZT0KcUw)
 
-::: danger
-
-非常抱歉，本节内容正在撰写中，请先关注公众号「素燕」，内容更新及时通知你：
-
-:::
-
-
 <GongZhongHao></GongZhongHao>

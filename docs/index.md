@@ -9,23 +9,23 @@ actionLink: /html-book/
 features:
 - title: 《TS 100小集》
   details: 100个实用的小知识，在实践中学习 TypeScript
-  cover: https://s3.ax1x.com/2021/03/07/6KPkef.png
+  cover: https://z3.ax1x.com/2021/04/11/c0uAQe.png
   href: /ts-book/
 - title: 《BAT算法面试》
-  details: 通过案例分析大厂算法面试题，彻底搞懂
-  cover: https://s1.ax1x.com/2020/10/11/0cTHuq.png
+  details: 通过案例分析大厂算法面试题，彻底搞懂，掌握基础
+  cover: https://z3.ax1x.com/2021/04/11/c0uVLd.png
   href: /dsa-book/
 - title: 《前端开源库》
-  details: 掌握前端常用的开源库，赋值高效开发
-  cover: https://s1.ax1x.com/2020/10/11/0cTxC4.png
+  details: 掌握前端常用的开源库，高效开发，快人一步
+  cover: https://z3.ax1x.com/2021/04/11/c0uSd1.png
   href: /framework-book/
 - title: 《BAT前端面试题解》
-  details: 分析100道大厂前端面试题，由浅入深
-  cover: https://s1.ax1x.com/2020/10/11/0cTj5F.png
+  details: 坚持1年，拿大厂offer，轻轻松松，为梦想奋斗
+  cover: https://z3.ax1x.com/2021/04/11/c0uEsH.png
   href: /interview-book/
-- title: 《Vue3编程思想》
-  details: 分析Vue3编程思想，精通 Vue
-  cover: https://s1.ax1x.com/2020/10/11/0cTUHK.png
+- title: 《Vue编程思想》
+  details: 探索vue编程思想，精通一个前端框架，成为专家
+  cover: https://z3.ax1x.com/2021/04/11/c0uFzD.png
   href: /vue3-book/
 tools:
 - title: 二维码

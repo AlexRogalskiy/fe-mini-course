@@ -26,11 +26,4 @@
 - [坚持学习前端的第20天](https://mp.weixin.qq.com/s/-js2txXGKUzEFEMUlF8JBg)
 
 
-::: danger
-
-非常抱歉，本节内容正在撰写中，请先关注公众号「素燕」，内容更新及时通知你：
-
-:::
-
-
 <GongZhongHao></GongZhongHao>

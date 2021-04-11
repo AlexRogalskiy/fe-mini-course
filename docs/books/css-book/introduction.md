@@ -15,13 +15,4 @@
 - [第13天：布局的兼容性与两种不常用的布局](https://mp.weixin.qq.com/s/fM8DkM9sGAGzu-G3TW_5UA)
 - [用前端仿写朋友圈](https://mp.weixin.qq.com/s/BUMaJXJ2bD0FcZ5kMI_WrA)
 
-
-
-::: danger
-
-非常抱歉，本节内容正在撰写中，请先关注公众号「素燕」，内容更新及时通知你：
-
-:::
-
-
 <GongZhongHao></GongZhongHao>
