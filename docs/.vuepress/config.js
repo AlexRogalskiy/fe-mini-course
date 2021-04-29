@@ -61,6 +61,7 @@ module.exports = {
       {
         text: '免费订阅',
         link: '/subcribe/',
+        stress: true
       },
       {
         text: 'GitHub',
@@ -183,7 +184,9 @@ module.exports = {
           collapsable: false,
           children: [
             'tools',
-            'learn'
+            'learn',
+            'lib',
+            'way'
           ]
         }
       ],

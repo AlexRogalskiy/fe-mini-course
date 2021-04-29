@@ -17,6 +17,7 @@
         v-else
         :item="item"
       />
+      <div v-if="item.stress" class="red-point"></div>
     </div>
 
     <!-- repo link -->
@@ -138,6 +139,14 @@ export default {
     line-height 2rem
     &:first-child
       margin-left 0
+    .red-point
+      position absolute
+      top 4px
+      right -9px
+      width 6px
+      height 6px
+      background-color red
+      border-radius 50%
   .repo-link
     margin-left 1.5rem
 

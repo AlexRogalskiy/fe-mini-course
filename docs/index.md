@@ -22,7 +22,7 @@ features:
 - title: 《BAT前端面试题解》
   details: 坚持1年，拿大厂offer，轻轻松松，为梦想奋斗
   cover: https://z3.ax1x.com/2021/04/11/c0uEsH.png
-  href: /interview-book/
+  href: https://lefex.github.io/bat
 - title: 《Vue编程思想》
   details: 探索vue编程思想，精通一个前端框架，成为专家
   cover: https://z3.ax1x.com/2021/04/11/c0uFzD.png

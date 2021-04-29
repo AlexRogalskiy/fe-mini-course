@@ -108,7 +108,6 @@
 - [啥时候用 sessionStorage](https://mp.weixin.qq.com/s/YKI7Q3QFnQBsuKX1AUkJIg)
 - [发现有人把 cookie 用作缓存机制，纠正](https://mp.weixin.qq.com/s/gcC1Vuz-THL049MUhhXq9g)
 - [用 import/export 全靠“抄”](https://mp.weixin.qq.com/s/SM1710OpskFaTPCpJvG6gg)
-- [JS 中如何实现策略模式](https://mp.weixin.qq.com/s/c6bcs1ojBiOq29SNG0DE-Q)
 - [一种系统化创建单例的方法](https://mp.weixin.qq.com/s/RR4I7ciae19b4Bov1QL9Bw)
 - [对象的 key 原来可以使用变量](https://mp.weixin.qq.com/s/-SZvDmLsGQa_NToTL2A_VQ)
 - [2 道 this面试题，你能答对几道？](https://mp.weixin.qq.com/s/9Otl12y_o9DPODH6R1MENQ)

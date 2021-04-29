@@ -47,14 +47,14 @@ export default {
             height: 100%;
             margin: 0 1.25rem 0;
             .title {
-                color: $textColor2;
-                font-size: 1.125rem;
-                padding: 0.5rem 0;
+                color: #000;
+                font-size: 14px;
+                padding-top: 16px;
             }
             .copyright {
-                color: $textColor2;
-                font-size: 0.875rem;
-                padding-top: 0.5rem;
+                color: #333;
+                font-size: 13px;
+                padding-top: 16px;
             }
         }
     }
